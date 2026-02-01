@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>המאמן החכם</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- מסך התחלה -->
+  <div id="login">
+    <h1>🎓 המאמן החכם</h1>
+    <input id="name" placeholder="שם">
+    <input id="age" type="number" placeholder="גיל">
+    <select id="subjectSelect"></select>
+    <button id="startBtn">התחל</button>
+  </div>
+
+  <!-- מסך משחק -->
+  <div id="game" class="hidden">
+    <h2 id="welcome"></h2>
+
+    <div id="stats">
+      ⭐ ניקוד: <span id="score"></span> |
+      🧠 רמה: <span id="level"></span> |
+      🎯 מקצוע: <span id="currentSubject"></span>
+    </div>
+
+    <button id="switchSubject">החלף מקצוע</button>
+
+    <p id="question"></p>
+    <input id="answer">
+    <button id="checkBtn">בדוק</button>
+
+    <p id="msg"></p>
+
+    <h3>🏆 הישגים</h3>
+    <ul id="achievements"></ul>
+
+    <canvas id="chart" width="300" height="150"></canvas>
+  </div>
+
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
